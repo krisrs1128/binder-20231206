@@ -33,9 +33,7 @@ function filter_dates(ev, scatter, scales) {
 }
 
 load_data()
-let scales = {}
-
-$: scales = {
+let scales = {
     x: d3.scaleLinear()
       .domain([0, 1])
       .range([0, width]),
